@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condicionais</title>
+    <script>
+        let notaMinima = 7;
+
+        let nota1 = 8;
+        let nota2 = 5;
+        let media = (nota1 + nota2) / 2;
+        console.log("A média do aluno é: " + media);
+        let alunoPassou = media > notaMinima
+
+          //-------------------------------------------------------------------------------------------------------------------------------------------
+         //  "if" = se     if(condição) {         //   se não se = else if      else if(condição) {        obs: se já tiver o if e depois else if
+        //                 escopo                //     se = else               escopo                     não precisa colocar o else no final.
+       //                  }                    //                              } eslse {        }   
+      //-----------------------------------------------------------------------------------------------------------------------------------------------  
+
+             // if (/*vai ficar as comparações*/) {
+            // vai ficar meu código }
+
+
+      if(media > notaMinima) {
+            alert("Aluno Passou")
+        } else if(media === notaMinima) {
+            alert("Aluno tá na média")
+        } else {
+            alert("Aluno não passou")
+        }
+
+        // if (alunoPassou) {
+        //     alert("Aluno passou");
+        // } else {
+        //     alert("Aluno não passou")
+        // }
+
+
+        if(media > notaMinima) {
+            alert("Aluno Passou")
+        } else if(media === notaMinima) {
+            alert("Aluno tá na média")
+        } else {
+            alert("Aluno não passou")
+        }
+
+
+       // if (/*vai ficar as comparações*/) {
+            // vai ficar meu código }
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
