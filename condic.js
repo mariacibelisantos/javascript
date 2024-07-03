@@ -20,3 +20,6 @@ frutas.pop()
 //remover elemento por posição:
 frutas.slice(2,1)
 console.log(frutas)
+
+
+
