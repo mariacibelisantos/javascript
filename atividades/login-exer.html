@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+      let emails = ["luan@1","luan@2","luan@3","michele1"];
+      let senhas = ["1", "2", "3", "4"];
+
+for(;;){
+let indexEmail;
+let emailLogin = prompt("Digite seu email: ");
+
+
+    for(let i = 0 ; i<emails.length;i++){
+        if(emailLogin == emails[i]){
+            indexEmail = i;
+            console.log(indexEmail);
+            break
+        }
+    }
+    
+    if(indexEmail == undefined){
+            alert("Email não encontrado. Tente novamente.");
+    } else {
+        let senha = prompt("Digite sua senha: ");
+
+        if (senha === senhas[indexEmail]) {
+            console.log("Logado com sucesso!");
+            loggedIn = true;
+            break;
+        } else {
+            alert("Senha incorreta. Tente novamente.");
+        }
+    }
+    }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

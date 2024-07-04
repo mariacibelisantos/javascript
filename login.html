@@ -8,25 +8,17 @@
         let emailDoUsuarioCadastrado = 'teste@gmail.com';
         let senhaDoUsuarioCadastrado = "1234";
 
+        for(let index = 0; index == 0;) {
         let emailDoLogin = prompt('Digite seu email');
         let senhaDoLogin = prompt('Digite sua senha');
 
-
-        if(emailDoLogin === emailDoUsuarioCadastrado && senhaDoLogin === senhaDoUsuarioCadastrado) {
+        if(emailDoLogin == emailDoUsuarioCadastrado && senhaDoLogin == senhaDoUsuarioCadastrado) {
             alert("Usuário logado!");
-        
-        } else {
+
+        } else if(emailDoLogin != emailDoUsuarioCadastrado && senhaDoLogin != senhaDoUsuarioCadastrado) {
             alert("Usuário não logado!")
-         let emailDoLogin = prompt('Digite seu email');
-         let senhaDoLogin = prompt('Digite sua senha');
-         if(emailDoLogin === emailDoUsuarioCadastrado && senhaDoLogin === senhaDoUsuarioCadastrado) {
-            alert("Usuário logado!");
-         } else {
-            alert("Usuário bloqueade!")
-         }
-
         }
-        alerta(texto)
+    }
 
 
     </script>
