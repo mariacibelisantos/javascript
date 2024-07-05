@@ -6,19 +6,20 @@
     <title>Document</title>
     <script>
 
-      let emails = ["luan@1","luan@2","luan@3","michele1"];
+      let emails = ["cibeli2@mail.com","cibeli3@mail.com","cibeli4@mail.com","cibeli5@mail.com"];
       let senhas = ["1", "2", "3", "4"];
 
+// for(;;) faz com que fique um loop infinito também
 for(;;){
-let indexEmail;
+let indexEmail;     // ("index_Nome_da_Variável") pega a toda lista de emails
 let emailLogin = prompt("Digite seu email: ");
 
 
-    for(let i = 0 ; i<emails.length;i++){
+    for(let i = 0; i < emails.length; i++){
         if(emailLogin == emails[i]){
             indexEmail = i;
             console.log(indexEmail);
-            break
+            break;
         }
     }
     
