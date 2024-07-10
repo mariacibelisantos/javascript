@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        alert("Olá")
+
+        let timeout = setTimeout(function() {
+            console.log("Primeiro set timeout");
+        }, 2000);
+
+        setTimeout(function(){
+        clearTimeout(timeout);
+        console.log("Segundo set timeout");
+        }, 1000)
+
+
+        // setTimeout(function()  {
+        //     console.log("Antes do set time")
+        //     for(let index = 0; index <= 1000; index++)
+        //     console.log("Dentro do set time out")
+        // }, 5000)
+
+        alert("mundo")
+
+        console.log("Depois do set time out");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
