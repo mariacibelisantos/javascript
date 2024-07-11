@@ -1,4 +1,4 @@
-let estados = [
+let listaDeEstados = [
     {
         "id": 11,
         "sigla": "RO",
@@ -277,45 +277,10 @@ let estados = [
         let cont2 = 0
         let cont3 = 0
 
-        let nordeste = []
-        for(let i = 0; i < estados.length; i++){
-            if(estados[i].regiao.nome === 'Sul'){
-            cont++
-        }
-            if(estados[i].regiao.nome === 'Nordeste'){
-                nordeste.push(estados[i].nome)
-            }
-    }
-        let norte = []
-        for(let i = 0; i < estados.length; i++){
-            if(estados[i].regiao.nome === 'Sul'){
-            cont1++
-        }
-            if(estados[i].regiao.nome === 'Nordeste'){
-                nordeste.push(estados[i].nome)
-            }
-    }
-        let centro = []
-        for(let i = 0; i < estados.length; i++){
-            if(estados[i].regiao.nome === 'Sul'){
-            cont2++
-        }
-            if(estados[i].regiao.nome === 'Nordeste'){
-                nordeste.push(estados[i].nome)
-            }
-    }
-        let sudeste = []
-        for(let i = 0; i < estados.length; i++){
-            if(estados[i].regiao.nome === 'Sul'){
-            cont3++
-        }
-            if(estados[i].regiao.nome === 'Nordeste'){
-                nordeste.push(estados[i].nome)
-            }
-    }
+for(let i = 0; i < listaDeEstados.nome; i++){
 
-    console.log('Temos ' + cont + ' Estados na Região Sul.')
-    console.log('Temos os seguintes Estados na Região Nordeste: ' + nordeste)
+}
+export default listaDeEstados;
 
     
 

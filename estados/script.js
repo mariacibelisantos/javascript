@@ -2,10 +2,10 @@ import estados from './estados.js';
 
 let tagUl = document.getElementById('lista-estados');
 
-let estados = listaDeEstados[0];
+let estado = estados;
+// definir a variável com o nome "estados" porque é o nome do arquivo
+for(let index = 0; index < estado.length; index++){
 
-for(let index = 0; index < estados.lenght; index++){
+tagUl.innerHTML += "<li>Estado: " + estado[index].nome + "<br>" + "Região: " + estado[index].regiao.nome + "</li>" + "<br>";
 
-tagUl.innerHTML = "<li>Estado" + estados.nome + ", Região: " + estados.regiao.nome + "</li>";
-key++
 }
