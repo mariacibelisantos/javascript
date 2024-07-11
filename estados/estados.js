@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script>
-        let estados = [
+let estados = [
     {
         "id": 11,
         "sigla": "RO",
@@ -280,6 +273,9 @@
         ]
 
         let cont = 0
+        let cont1 = 0
+        let cont2 = 0
+        let cont3 = 0
 
         let nordeste = []
         for(let i = 0; i < estados.length; i++){
@@ -290,14 +286,36 @@
                 nordeste.push(estados[i].nome)
             }
     }
+        let norte = []
+        for(let i = 0; i < estados.length; i++){
+            if(estados[i].regiao.nome === 'Sul'){
+            cont1++
+        }
+            if(estados[i].regiao.nome === 'Nordeste'){
+                nordeste.push(estados[i].nome)
+            }
+    }
+        let centro = []
+        for(let i = 0; i < estados.length; i++){
+            if(estados[i].regiao.nome === 'Sul'){
+            cont2++
+        }
+            if(estados[i].regiao.nome === 'Nordeste'){
+                nordeste.push(estados[i].nome)
+            }
+    }
+        let sudeste = []
+        for(let i = 0; i < estados.length; i++){
+            if(estados[i].regiao.nome === 'Sul'){
+            cont3++
+        }
+            if(estados[i].regiao.nome === 'Nordeste'){
+                nordeste.push(estados[i].nome)
+            }
+    }
 
     console.log('Temos ' + cont + ' Estados na Região Sul.')
     console.log('Temos os seguintes Estados na Região Nordeste: ' + nordeste)
 
     
-    </script>
-</head>
-<body>
-    
-</body>
-</html>
+
